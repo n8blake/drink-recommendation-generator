@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Drink Recommendation Generator</title>
+		<link rel="stylesheet" href="" />
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/universal-sentence-encoder"></script>	
+	</head>
+	<body>
+		<main>
+			<h1>Drink Generator</h1>
+			<p>Paste the title, plot and other important information about a movie into the box and get a drink recommendation for your movie.</p>
+			<textarea id="text-area-1" rows="5" placeholder="Text 1"></textarea>
+			<br>
+			<button id="generateRecomendationBtn" disabled="true">Compare</button>
+			<div>Recommendation: <span id="recommendationSpan"></span></div>
+			<br>
+			<div id="movieScoresTestDiv">
+				
+			</div>
+		</main>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
